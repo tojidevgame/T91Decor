@@ -34,7 +34,7 @@
 }
 
 .nav-item.active {
-    border-bottom: 2px solid yellow;
+    border-bottom: 2px solid #fb7901;
     color: white !important;
 }
 
@@ -96,4 +96,20 @@
 /* CONTENT  */
 .content{
     padding-top: 50px;
+}
+
+.service{
+    border: 1px #f97b05 solid;
+    border-top: 2px #a12a02 solid;
+    width: 230px;
+    border-radius: 20px;
+    height: 150px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f6f6f4;
+}
+
+
+.person{
+    width: 250px;
 }

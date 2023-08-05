@@ -21,14 +21,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
+    <link rel="icon" type="image/x-icon" href="/sources/images/logo.jpg">
 </head>
 
 <body>
-    <div class="header_main header-color" style="z-index: 1000; background-color: #ffa04d !important;" id="header-brand">
+    <div class="header_main header-color" style="z-index: 1000; background-color: #ffa04d !important;"
+        id="header-brand">
         <div class="container">
             <div class="row flex">
                 <div class="col-md-12 col-logo">
-                    <div class="wrap logo text-center" style=" display: flex; align-items: center;justify-content: center;">
+                    <div class="wrap logo text-center"
+                        style=" display: flex; align-items: center;justify-content: center;">
                         <img class="no-lazy logo" src="./sources/images/logo.jpg" alt="T91-Decor" width="80px"
                             height="80px">
                         <span style="color: white; font-weight: 600; font-size: 40px; margin-left: 15px;">T91
@@ -75,14 +78,14 @@
         </div>
     </div> -->
 
-    <div class="ml-5 mr-5 mt-3">
+    <div class="ml-5 mr-5 mt-3 introduce">
         <!-- GIoi thieu -->
         <div>
-            <h1 style="margin: 0 150px; line-height: 60px;" class="text-center">T91 Decor chuyên cung cấp dịch vụ tư vấn
+            <h1 style="margin: 0 150px; line-height: 60px;" class="text-center content-responsive">T91 Decor chuyên cung cấp dịch vụ tư vấn
                 thiết kế nội thất,
                 thiết kế kiến trúc trọn gói uy tín, chuyên nghiệp</h1>
 
-            <div style="margin: 0 150px;" class="mt-2 text-center">
+            <div style="margin: 0 150px;" class="mt-2 text-center content-responsive">
                 Chào mừng đến với T91 Decor - nơi mang đến sự sang trọng và sáng tạo trong thiết kế nội thất, thiết kế
                 kiến trúc và bản vẽ xây dựng! Tại T91 Decor, chúng tôi tận dụng tài năng và kinh nghiệm của đội ngũ
                 thiết kế
@@ -119,6 +122,7 @@
                     <div class="text-center mt-1">
                         Tạo không gian hài hòa và thẩm mỹ và tiện nghi.
                     </div>
+                    <div></div>
                 </div>
 
                 <div class="service">
@@ -141,7 +145,7 @@
             <h3 class="text-center mt-4" style="font-size: 30px;">Một số sản phẩm của chúng tôi</h3>
             <h5 style="margin-left: 10%;">Thiết kế nội thất</h5>
             <h6 class="text-center mt-4" style="font-size: 18px;">Phòng bếp</h6>
-            <div class="d-flex justify-content-center mt-4">
+            <div class="d-flex justify-content-center mt-4 row-image">
                 <img class="img-sanpham" src="./sources/images/phongbep/bep1.jpg" alt="">
                 <img class="img-sanpham" src="./sources/images/phongbep/bep2.jpg" alt="">
                 <img class="img-sanpham" src="./sources/images/phongbep/bep3.jpg" alt="">
@@ -169,9 +173,9 @@
         </div>
 
         <!-- Doi ngu cong ty -->
-        <div>
+        <div class="resource-human">
             <h3 class="text-center mt-4" style="font-size: 30px;">Đội ngũ công ty có tay nghề cao</h3>
-            <div style="margin: 0 150px;" class="text-center">Tại T91 Decor, chúng tôi tự hào có đội ngũ giàu
+            <div style="margin: 0 150px;" class="text-center resource-human-content">Tại T91 Decor, chúng tôi tự hào có đội ngũ giàu
                 kinh nghiệm, từng làm việc tại Nhật Bản - một quốc gia nổi tiếng với tiêu chuẩn chất lượng và sự tinh tế
                 trong thiết kế và xây dựng. Với sự kết hợp giữa kiến thức quốc tế và tinh thần tận tụy, chúng tôi đảm
                 bảo mang đến cho khách hàng sự hài lòng và kết quả tốt nhất. Chúng tôi đã thực hiện thành công nhiều dự
@@ -185,8 +189,9 @@
                         alt="Lê Bảo Toàn">
                     <div>
                         <span style="font-size: 12px; font-weight: 300;">Giám Đốc - Kỹ sư</span>
-                        <div>Lê Bảo Toàn</div>
-                        <div>Kinh nghiệm +8 năm trong thiết kế nội thất, kiến trúc cho các công ty trong và ngoài nước
+                        <div class="text-center" style="font-weight: bold;">Lê Bảo Toàn</div>
+                        <div class="text-center">Kinh nghiệm +8 năm trong thiết kế nội thất, kiến trúc cho các công ty
+                            trong và ngoài nước
                         </div>
                     </div>
                 </div>
@@ -201,31 +206,40 @@
             </div>
         </div>
 
-        <div class="btn-call-now btn-call-01" rel="nofollow">
+        <div class="btn-call-now btn-call-01" rel="nofollow" onclick="copyPhone()">
             <em class="licon-telephone"><i class="fa fa-phone"></i></em>
-            <span>082.5550555</span>
+            <span id="phone-copy">0975 75 0304</span>
+            <span class="tooltiptext">Click to copy</span>
         </div>
     </div>
 
     <!-- FOOTER -->
     <div class="footer p-5 text-center">
         <div style="font-weight: 500;
-                font-size: 18px; color: #fff;"><span style="font-size: 15px;">Gọi ngay: </span>0348 871 531</div>
+                font-size: 18px; color: #fff;"><span style="font-size: 15px;">Gọi ngay: </span>0975 75 0304</div>
         <div style="font-weight: 500;
         font-size: 25px; color: #e7b211;">Để được tư vấn thiết kế những mẫu nhà mới nhất, hiện đại nhất</div>
         <div style="font-weight: 500;
         font-size: 18px; color: #fff;">Hoặc liên hệ chúng tôi qua:</div>
         <div style="margin-top: 10px;">
-            <a href="https://zalo.me/0348871531" target="_blank">
-                <img style="width: 45px; border-radius: 50%;" src="./sources/images/zalo.png" alt="Zalo: 0348 871 531">
+            <a href="https://zalo.me/0975750304" class="scale" target="_blank">
+                <img style="width: 45px; border-radius: 50%;" src="./sources/images/zalo.png" alt="Zalo: 0975750304">
             </a>
 
-            <a href="https://m.me/100078668600525" target="_blank">
+            <a href="https://m.me/100078668600525" class="scale" target="_blank">
                 <img style="margin-left: 15px; width: 45px; border-radius: 50%;" src="./sources/images/mes.png"
                     alt="Messenger">
             </a>
         </div>
     </div>
+
+    <div class="google-map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.435019059591!2d106.70172977460238!3d10.700890860583344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175313d7057d739%3A0x3aa0dd73e1748c72!2zSOG6u20gMTE4NQ!5e0!3m2!1svi!2s!4v1691201093762!5m2!1svi!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
     <!-- END FOOTER -->
 </body>
 
